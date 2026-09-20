@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
-import { Search, Heart, ShoppingBag, Menu, X, User, ChevronDown, Package, MapPin, LogOut } from "lucide-react";
+import { Search, Heart, ShoppingBag, Menu, X, User, ChevronDown, Package, MapPin, LogOut, ShieldCheck } from "lucide-react";
 import { useCart } from "../../context/CartContext";
 import { useWishlist } from "../../context/WishlistContext";
 import { useAuth } from "../../context/AuthContext";
@@ -167,6 +167,14 @@ export default function Navbar() {
               }`}
             >
               Visit Showroom
+            </Link>
+            <Link
+              to="/admin/login"
+              title="Admin Login"
+              aria-label="Admin Login"
+              className={`hidden lg:flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity ${textColor}`}
+            >
+              <ShieldCheck size={25} />
             </Link>
             <button
               aria-label="Toggle menu"
