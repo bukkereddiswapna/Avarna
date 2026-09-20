@@ -174,7 +174,7 @@ export default function Navbar() {
               aria-label="Admin Login"
               className={`hidden lg:flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity ${textColor}`}
             >
-              <ShieldCheck size={25} />
+              <ShieldCheck size={24} />
             </Link>
             <button
               aria-label="Toggle menu"
